@@ -1,0 +1,6 @@
+/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/pydantic/_internal/_config.py:295: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.10/migration/
+  warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+2025-03-23 16:07:17,802 - 136562649556032 - base_agent.py-base_agent:78 - INFO: "you-agent-name  receive  data : \u4eca\u5929\u4e2d\u5348\u5403\u4e9b\u4ec0\u4e48\uff1f  "
+2025-03-23 16:07:34,382 - 136562649556032 - main.py-main:74 - ERROR: openai调用失败: Connection error.
+2025-03-23 16:07:34,387 - 136562649556032 - base_agent.py-base_agent:78 - INFO: "llm_agent  output data : \u5904\u7406\u9519\u8bef\uff1a Connection error.  type : <class 'str'>"
+[2m2025-03-23T08:07:34.387142Z[0m [33m WARN[0m [2mdora_node_api::node[0m[2m:[0m Ignoring output `llm_agent` not in node's output list.

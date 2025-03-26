@@ -1,0 +1,424 @@
+/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/pydantic/_internal/_config.py:295: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.10/migration/
+  warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+2025-03-24 15:31:06,079 - 130290781439040 - base_agent.py-base_agent:78 - INFO: "you-agent-name  receive  data : 100\u6444\u6c0f\u5ea6\u5927\u6982\u662f\u591a\u5c11\u70ed\u529b\u5b66\u6e29\u5ea6\uff1f  "
+now is ok
+2025-03-24 15:31:13,884 - 130290781439040 - base_agent.py-base_agent:78 - INFO: "llm_result  output data : 100\u6444\u6c0f\u5ea6\u7b49\u4e8e373.15\u5f00\u5c14\u6587\uff08K\uff09\u3002  type : <class 'str'>"
+2025-03-24 15:31:38,516 - 130290781439040 - base_agent.py-base_agent:78 - INFO: "you-agent-name  receive  data : 100\u6444\u6c0f\u5ea6\u5927\u6982\u662f\u591a\u5c11\u70ed\u529b\u5b66\u6e29\u5ea6\uff1f  "
+now is ok
+2025-03-24 15:31:47,094 - 130290781439040 - base_agent.py-base_agent:78 - INFO: "llm_result  output data : 100\u6444\u6c0f\u5ea6\u7b49\u4e8e373.15\u5f00\u5c14\u6587\uff08K\uff09\u3002  type : <class 'str'>"
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
+Error occurred: 'MofaAgent' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 44, in run
+    value = searchEngine.extract_keywords(user_input)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 29, in extract_keywords
+    response = self.client.chat.completions.create(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 919, in request
+    return self._request(
+  File "/home/bjy15364883518/anaconda3/envs/mofa/lib/python3.10/site-packages/openai/_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.UnprocessableEntityError: Failed to deserialize the JSON body into the target type: messages[1]: data did not match any variant of untagged enum ChatCompletionRequestContent at line 1 column 726
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bjy15364883518/mofa/python/mofa/agent_build/base/base_agent.py", line 236, in wrapper
+    func(*args, **kwargs)
+  File "/home/bjy15364883518/mofa/python/agent-hub/analyse-agent/agent/main.py", line 61, in run
+    except Exception as e:
+AttributeError: 'MofaAgent' object has no attribute 'logger'
