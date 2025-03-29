@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "key-BERT"
+version = "0.0.1"
+authors = [
+    "Nicolas Zeus"
+]
+description = "use keyBERT to extract keywords"
+license = "MIT License"
+homepage = "https://github.com/moxin-org/mofa"
+documentation = "https://github.com/moxin-org/mofa/blob/main/README.md"
+readme = "README.md"
+packages = [{ include = "key_BERT" }]
+
+[tool.poetry.dependencies]
+pyarrow = ">= 5.0.0"
+keybert = "*"
+jieba = "*"
+hanlp = "*"
+
+[tool.poetry.scripts]
+key-BERT = "key_BERT.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
+
